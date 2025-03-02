@@ -1,0 +1,88 @@
+body {
+    background-color: hsl(218, 23%, 16%);
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-inline: 1.6rem;
+    font-family: 'Manrope', sans-serif;
+    font-size: 1.4rem;
+    color: hsl(193, 38%, 86%);
+}
+
+.advice-generator {
+    background-color: hsl(217, 19%, 24%);
+    border-radius: 1rem;
+    padding: 3.2rem;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    text-align: center;
+    position: relative;
+    max-width: 42rem;
+    width: 100%;
+}
+
+.advice-generator__card {
+    display: flex;
+    flex-direction: column;
+    gap: 1.6rem;
+}
+
+.advice-generator__card__advice-id {
+    font-size: 0.9rem;
+    letter-spacing: 0.3rem;
+    font-weight: 500;
+    color: hsl(150, 100%, 66%);
+    text-transform: uppercase;
+}
+
+.advice-generator__card__advice {
+    font-size: 2.4rem;
+    font-weight: 700;
+    color: hsl(193, 38%, 86%);
+}
+
+.advice-generator__card__divider {
+    width: 100%;
+    margin-bottom: 1.6rem;
+}
+
+.advice-generator__dice {
+    position: absolute;
+    bottom: -2rem;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: hsl(150, 100%, 66%);
+    border-radius: 50%;
+    padding: 1.6rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: none;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+}
+
+.advice-generator__dice:hover {
+    box-shadow: 0 0 1.6rem hsl(150, 100%, 66%);
+}
+
+.advice-generator__dice__icon {
+    width: 1.6rem;
+}
+
+@media (max-width: 600px) {
+
+    .advice-generator__card__advice-id {
+        font-size: 0.8rem;
+    }
+
+    .advice-generator__card__advice {
+        font-size: 1.5rem;
+    }
+
+    .advice-generator__dice {
+        padding: 1.2rem;
+    }
+}
